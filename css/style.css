@@ -28,7 +28,13 @@
 /* Template default CSS
 /*----------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Baloo+2:wght@400..800&display=swap');
+@font-face {
+  font-family: 'Prototype Bold' ;
+  src: url(/fonts/Prototype.ttf);
+} 
 html,
 body {
   height: 100%;
@@ -36,7 +42,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background-size: cover;
   background-attachment: fixed;
-  background-color: black;
+background-image: url(/img/hero/hero-bg.jpg);
+
   }
 ::-webkit-scrollbar {
   width: 7px;               /* width of the entire scrollbar */
@@ -44,9 +51,9 @@ body {
 
 .gradient-title-css{
   background: #9917E9;
-  background: -webkit-linear-gradient(to right,'' #7000ff 0%, #2F79E1 24%, #07DBC1 100%);
-  background: -moz-linear-gradient(to right, #9917E9 0%, #2F79E1 24%, #07DBC1 100%);
-  background: linear-gradient(to right, #9917E9 0%, #2F79E1 24%, #07DBC1 100%);
+  background: -webkit-linear-gradient(to right,'' #3fcfe2 0%, #07DBC1 24%, #07DBC1 100%);
+  background: -moz-linear-gradient(to right, #9917E9 5%, #07DBC1 24%, #07DBC1 100%);
+  background: linear-gradient(to right, #3fcfe2 0%, #07DBC1 24%, #07DBC1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -55,16 +62,13 @@ body {
   background-color: #000  ;    /* color of the scroll thumb */
 }
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2{
   margin: 0;
   color: #111111;
-  font-weight: 400;
+  font-weight: bold;
   /* font-family: "Play", sans-serif; */
-  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-family: 'Baloo 2' ;
+
 
 }
 
@@ -78,18 +82,26 @@ h2 {
 
 h3 {
   font-size: 30px;
+  font-family: Baloo Bhaijaan 2;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 24px;
+  font-family: Baloo Bhaijaan 2;
+  font-weight: bold;
 }
 
 h5 {
   font-size: 18px;
+  font-family: Baloo Bhaijaan 2;
+  font-weight: bold;
 }
 
 h6 {
   font-size: 16px;
+  font-family: Baloo Bhaijaan 2;
+  font-weight: bold;
 }
 
 p {
@@ -343,7 +355,9 @@ ol {
     width: 90%; /* Utilize toda a largura da tela */
     padding: 10px; /* Adicione um espaçamento interno menor */
   }
-
+  .header__logo img{
+    height: 30px;
+  }
   .header__logo {
     padding: 10px 0; /* Reduza o espaçamento ao redor do logotipo */
   }
@@ -851,7 +865,7 @@ ol {
 .latest {
   background: url('');
   padding-bottom: 80px;
-  background:rgb(0 0 0 / 89%);
+  background-color: #00000056;
 
 }
 
@@ -1197,7 +1211,7 @@ ol {
 .services {
   padding-bottom: 60px;
   padding-top: 110px;
-  background: rgb(0 0 0 / 89%);
+  background-color: #00000056;
 
 }
 
@@ -1864,6 +1878,9 @@ ol {
   .container {
     max-width: 1170px;
   }
+  body {
+    background-position: right;
+  }
 }
 /* Medium Device = 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1903,6 +1920,9 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero__slider.owl-carousel .owl-dots {
     max-width: 690px !important;
+  }
+  .header__logo img{
+    height: 50px;
   }
 
   .services__title {
@@ -2252,7 +2272,7 @@ ol {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.603);
+  background-color: #00000056;
 }
 
 
